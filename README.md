@@ -11,6 +11,8 @@ click a button if the light is on the same spot as it was _n_ turns ago. You
 have to remember _n_ turns back! _n_ can be any value, the higher the value
 the harder the game tends to be. This game is currently 2-back.
 
+You can test out the current code and play a few games [here!](http://ggnextmap.github.com/N-back/)
+
 ### Example:
 
 First, the light is on the top right. Then the light goes to the
