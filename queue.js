@@ -1,3 +1,4 @@
+// I saw this game as a queue in my head, over engineering FTW!
 var Queue = function () {
   this.list = [];
 };
