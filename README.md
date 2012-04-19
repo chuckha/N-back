@@ -13,9 +13,9 @@ the harder the game tends to be. This game is currently 2-back.
 
 ### Example:
 
-The first board, the light is on the top right. Then the light goes to the
-bottom left corner. The light the flashes to the top right and since it was 
-there two turns ago, you push the button!
+First, the light is on the top right. Then the light goes to the
+bottom left corner. Then the light goes back to the top right and since it was 
+there two turns ago, you push the button and get a point! Nice!
 
     x x o      x x x      x x o  <-- Push the button!
     x x x  ->  x x x  ->  x x x
