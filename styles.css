@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+div#game {
+  width: 306px;
+  margin: 0 auto;
+}
+
+div.cell {
+  width: 100px;
+  height: 100px;
+  float:left;
+  border-width:1px;
+  border-style: solid;
+}
+
+div.l {
+  clear: both;
+}
+
+div.lit {
+  background-color: orange;
+}
