@@ -29,3 +29,6 @@ Non-programmer issues:
 
 * There should also be sound in this game! I need sound clips of the English
   alphabet. I also see an opportunity to make this game international!
+* The design is pretty terrible. If you want to design something, I'd be happy
+  to put it up!
+* Feedback about the game play.
