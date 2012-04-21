@@ -1,8 +1,8 @@
 var nback = {},
-    ROUNDS = 20,
-    TIME_BETWEEN_ROUNDS = 3000,
+    BLINKS = 20,
+    TIME_BETWEEN_BLINKS = 300,
     // This must be less than TIME_BETWEEN_ROUNDS
-    LIGHT_ON_FOR = 900,
+    LIGHT_ON_FOR = 90,
     i, start, checkSameSpace;
 
 // This is how many turns back you will have to remember!
@@ -89,7 +89,7 @@ nback.next = function () {
   setTimeout(nback.unlightElement, LIGHT_ON_FOR);
 
   // End the game after ROUNDS rounds
-  if (nback.round >= ROUNDS) {
+  if (nback.blink_count >= BLINKS) {
     nback.endGame();
   }
 };
@@ -105,7 +105,7 @@ nback.startGame = function () {
 
   // Make a new game
   nback.queue = new Queue();
-  for (i=0; i<ROUNDS; i++) {
+  for (i=0; i<BLINKS; i++) {
 
     // Populate with random data, less fun than created games
     // but this is way easier to program.
@@ -119,7 +119,7 @@ nback.startGame = function () {
   nback.updatePoints();
 
   // Run the game loop every TIME_BETWEEN_ROUNDS
-  nback.intervalId = window.setInterval(nback.next, TIME_BETWEEN_ROUNDS);
+  nback.intervalId = window.setInterval(nback.next, TIME_BETWEEN_BLINKS);
 };
 
 // Teardown function
