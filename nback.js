@@ -27,6 +27,7 @@ nback.cells = document.getElementsByClassName('cell');
 nback.sameSpaceButton = document.getElementById('same-space');
 nback.startButton = document.getElementById('start');
 nback.pointsElement = document.getElementById('score');
+nback.roundElement = document.getElementById('round');
 
 // There must be punishment for a wrong answer
 nback.removePoint = function () {
@@ -41,6 +42,11 @@ nback.addPoint = function () {
 // Display the current points
 nback.updatePoints = function () {
   nback.pointsElement.innerHTML = nback.points;
+};
+
+// Display the current round
+nback.updateRound = function () {
+  nback.roundElement.innerHTML = nback.round;
 };
 
 // Add the lit class to a cell
@@ -73,7 +79,7 @@ nback.next = function () {
   nback.sameSpaceButton.disabled = false;
 
   // increase the round
-  nback.round += 1;
+  nback.blink_count += 1;
 
   // Get the next cell to light up
   index = nback.queue.dequeue();
@@ -90,6 +96,12 @@ nback.next = function () {
 
 // Setup function
 nback.startGame = function () {
+  // Increase and display the round count
+  nback.round += 1;
+  nback.updateRound();  
+
+  // Start the blink_count at 0
+  nback.blink_count = 0;
 
   // Make a new game
   nback.queue = new Queue();
