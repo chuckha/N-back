@@ -139,4 +139,3 @@ checkSameSpace = function () {
 // onclick handlers
 nback.sameSpaceButton.onclick = checkSameSpace;
 nback.startButton.onclick = nback.startGame;
-

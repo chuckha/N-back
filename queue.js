@@ -11,5 +11,3 @@ Queue.prototype.queue = function (item) {
 Queue.prototype.dequeue = function () {
   return this.list.shift();
 };
-
-
